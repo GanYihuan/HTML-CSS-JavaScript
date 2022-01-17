@@ -83,7 +83,14 @@
   <meta http-equiv=”pragma” content=”no-cache”>
   <meta http-equiv=”cache-control” content=”no-cache”>
   <meta http-equiv=”expires” content=”0″>
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  width=device-width: device-width 是竖屏屏幕宽度, layout viewport = ideal viewport = window.innerWidth = 设备屏幕宽度(iphone, ipad 竖屏为基准)
+  initial-scale=1: 初始缩放比例, 对 ideal viewport 缩放, layout viewport = ideal viewport / initial-scale
+  maximum-scale=1: 允许用户缩放到的最大比例
+  minimum-scale=1: 允许用户缩放到的最小比例
+  user-scalable=no: 用户是否可以手动缩放
 </body>
 </html>
