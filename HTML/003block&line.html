@@ -10,5 +10,87 @@
   行内元素：a b span strong img input
   块级元素：div h1 p ul ol li dl dt dd
   空元素：<br> <hr> <img> <input> <link> <meta>
+  <!-- _blank: 在新页面中打开网页 -->
+  <a href="https://www.google.com" target="_blank"></a>
+
+  <!-- _self: 在当前页面中打开网页 -->
+  <a href="https://www.google.com" target="_self"></a>
+
+  <!-- 刷新后跳转到顶页 -->
+  <a href="#"></a>
+
+  <!-- 向当前页面引入其它页面 -->
+  <!-- SEO 问题
+  XSS 攻击的风险
+  可用性问题
+  绕过浏览器的跨域安全策略，用来实现跨域请求访问
+  加载多种类型的资源 -->
+  <iframe frameborder="0"></iframe>
+
+  <!-- 引入一个外部音频 -->
+  <audio controls autoplay loop>
+    <source src="">
+    <source src="">
+    <embed src="" type="">
+  </audio>
+  <!-- 引入一个外部视频 -->
+  <video controls>
+    <source src="">
+    <source src="">
+    <embed src="" type="">
+  </video>
+
+  title: 为连接添加描述性文字
+  alt: 图片无法加载时, 文本取代图像
+  data-: 自定义属性
+
+  id: 元素 id, 文档唯一
+  class: 类标识
+  data-*: 自定义属性
+  draggable: 元素是否可拖拽
+  style: 行内 css 样式
+  lang: 元素内容语言
+  title: 元素相关建议信息
+
+  <div id="div1" data-miaov-all="妙味课堂">div</div>
+  <script>
+    window.onload = function() {
+      var oDiv = document.getElementById('div1')
+      alert(oDiv.dataset.miaovAll)
+    }
+  </script>
+
+IE8/IE7/IE6 支持通过 document.createElement 方法产生的标签,
+引入html5shiv.js
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+渲染引擎: 获取网页内容, 计算网页显示方式, 输出至显示器
+JS 引擎: 解析执行 javascript 实现网页动态效果
+内核倾向于指渲染引擎
+Trident：IE
+Gecko：FF
+Blink：Opera 内核原为 Presto， 现为 Blink
+Webkit：Safari, Chrome
+
+区分用户是计算机还是人
+防止恶意破解密码、刷票、论坛灌水
+
+语义化
+提高网速
+img 加 alt
+少用 iframe
+重要内容 HTML 置前
+重要内容不要用 js 输出
+
+标签闭合
+标签小写
+外链 css js
+不乱嵌套
+结构行为分离
+
+
+
 </body>
 </html>
